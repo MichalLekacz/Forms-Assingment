@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script defer="" src="script.js"></script>
+    <script defer src="script.js"></script>
     <title>Kreativ</title>
 </head>
 
@@ -19,10 +19,11 @@
             <div class="logo">
                 <h3>Kreativ</h3>
             </div>
-            <form>
+            <form id="form" action="/" method="GET">
                 <h2>Lets get you started!</h2>
-                    <label for="fullname">Full name</label><br>
-                    <input type="text" id="fullname" class="fullname" name="fullname" placeholder="Ade Tiger"
+                <div id="error"></div><br>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" class="name" name="name" placeholder="Ade Tiger"
                         minlength="3">
                     <label for="email">Email adress</label><br>
                     <input type="email" id="email" class="email" name="email" autocomplete="email"

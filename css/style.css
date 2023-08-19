@@ -52,6 +52,11 @@ h2 {
     margin-bottom: 4rem;
 }
 
+#error {
+    color:red;
+    font-size: 0.5vw;
+}
+
 .password-hint>p {
     color: #CCC;
     font-size: 12px;
