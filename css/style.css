@@ -61,7 +61,7 @@ h2 {
 }
 
 input {
-    width: 400px;
+    width: 100%;
     height: 35px;
     flex-shrink: 0;
     margin-bottom: 2rem;
@@ -73,7 +73,7 @@ input {
 }
 
 select {
-    width: 400px;
+    width: 100%;
     height: 35px;
     flex-shrink: 0;
     margin-bottom: 2rem;
@@ -107,7 +107,7 @@ label span {
 }
 
 #location {
-    width: 400px;
+    width: 100%;
     height: 35px;
     flex-shrink: 0;
     margin-bottom: 1rem;
@@ -210,4 +210,10 @@ footer a {
 
 footer a:hover {
     color: #92dde4;
+}
+
+@media only screen and (max-width: 1000px) {
+    .right-container {
+        display: none;
+    }
 }

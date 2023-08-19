@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script defer="" src="script.js"></script>
     <title>Kreativ</title>
 </head>
 
@@ -20,30 +21,21 @@
             </div>
             <form>
                 <h2>Lets get you started!</h2>
-                <div class="form-item">
                     <label for="fullname">Full name</label><br>
                     <input type="text" id="fullname" class="fullname" name="fullname" placeholder="Ade Tiger"
                         minlength="3">
-                </div>
-                <div class="form-item">
                     <label for="email">Email adress</label><br>
                     <input type="email" id="email" class="email" name="email" autocomplete="email"
                         placeholder="yourname@email.com">
-                </div>
-                <div class="form-item">
                     <label for="phone">Phone number</label><br>
                     <input type="tel" id="phone" class="phone" name="phone" autocomplete="+353"
                         placeholder="800 2738 9700">
-                </div>
-                <div class="form-item">
                     <label for="create">Create password</label><br>
                     <input type="password" id="password" class="password" name="password" placeholder='••••••••'>
-                </div>
                 <div class="password-hint">
                     <p>Password must contain a minimum of 8 characters<br>Password must contain at least one symbol e.g.
                         @, !</p>
                 </div>
-                <div class="form-item">
                     <label for="location">Location <span>(optional)</span></label><br>
                     <select id="location" name="location">
                         <option value="Ireland">Ireland</option>
@@ -51,8 +43,7 @@
                         <option value="England">England</option>
                         <option value="Germany">Germany</option>
                     </select>
-                </div>
-                <button class="button">Sign Up</button>
+                <button class="button" type="submit">Sign Up</button>
             </form>
             <div class="login-hint">
                 <p>Already a user? <a href="#">Login</a></p>
