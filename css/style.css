@@ -31,7 +31,7 @@ section {
 }
 
 .left-background {
-    background-image: url("./img/Stroke.svg");
+    background-image: url(../img/stroke.svg);
     background-repeat: no-repeat;
     background-size: 80%;
 
@@ -213,6 +213,10 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 1000px) {
+    .left-container {
+        width: 90%;
+    }
+
     .right-container {
         display: none;
     }
