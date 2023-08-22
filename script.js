@@ -55,7 +55,7 @@ emailInput.addEventListener('input', () => {
 });
 
 phoneInput.addEventListener('input', () => {
-    const phoneRegex = /^\d{10}$/; // Adjust the regex pattern as needed
+    const phoneRegex = /^\d{10}$/;
     if (phoneRegex.test(phoneInput.value)) {
         phoneInput.classList.remove('invalid');
         phoneInput.classList.add('valid');
