@@ -19,26 +19,6 @@ nameInput.addEventListener('input', () => {
     }
 });
 
-passwordInput.addEventListener('input', () => {
-    const password = passwordInput.value;
-
-    const hasUpperCase = /[A-Z]/.test(password);
-    const hasSymbol = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]+/.test(password);
-    const hasNumber = /[0-9]/.test(password);
-
-    if (password.length >= 6 && password.length <= 25 && hasUpperCase && hasSymbol && hasNumber) {
-        passwordInput.classList.remove('invalid');
-        passwordInput.classList.add('valid');
-        messageDiv.textContent = '';
-        messageDiv.style.display = 'none';
-    } else {
-        passwordInput.classList.remove('valid');
-        passwordInput.classList.add('invalid');
-        messageDiv.textContent = 'Your password must include at least one uppercase letter, one number, and one symbol.';
-        messageDiv.style.display = 'block';
-    }
-});
-
 emailInput.addEventListener('input', () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailRegex.test(emailInput.value)) {
@@ -55,7 +35,7 @@ emailInput.addEventListener('input', () => {
 });
 
 phoneInput.addEventListener('input', () => {
-    const phoneRegex = /^\d{10}$/; // Adjust the regex pattern as needed
+    const phoneRegex = /^\d{10}$/;
     if (phoneRegex.test(phoneInput.value)) {
         phoneInput.classList.remove('invalid');
         phoneInput.classList.add('valid');
@@ -65,6 +45,26 @@ phoneInput.addEventListener('input', () => {
         phoneInput.classList.remove('valid');
         phoneInput.classList.add('invalid');
         messageDiv.textContent = 'This is not a valid phone number.';
+        messageDiv.style.display = 'block';
+    }
+}); 
+
+passwordInput.addEventListener('input', () => {
+    const password = passwordInput.value;
+
+    const hasUpperCase = /[A-Z]/.test(password);
+    const hasSymbol = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]+/.test(password);
+    const hasNumber = /[0-9]/.test(password);
+
+    if (password.length >= 6 && password.length <= 25 && hasUpperCase && hasSymbol && hasNumber) {
+        passwordInput.classList.remove('invalid');
+        passwordInput.classList.add('valid');
+        messageDiv.textContent = '';
+        messageDiv.style.display = 'none';
+    } else {
+        passwordInput.classList.remove('valid');
+        passwordInput.classList.add('invalid');
+        messageDiv.textContent = 'Your password must include at least one uppercase letter, one number, and one symbol.';
         messageDiv.style.display = 'block';
     }
 });
